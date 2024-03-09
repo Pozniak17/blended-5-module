@@ -7,6 +7,7 @@ export const getCountries = async () => {
   const { data } = await axios.get('/region/europe');
   const countries = transformCountriesData(data);
 
+  console.log(data);
   return countries;
 };
 
